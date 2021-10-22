@@ -1,0 +1,41 @@
+﻿.container-img{
+    position: relative;
+}
+.imgTour{
+    width: 100px;
+    height: auto;
+    
+}
+.imgTour_hover{
+    position: absolute;
+    top: 0;
+    left: 110px;
+    width: 200px;
+    height: auto;
+    display: none;
+}
+.imgTour:hover ~ .imgTour_hover{
+    display: block;
+    animation-name: example;
+    animation-duration: 0.5s;
+}
+#table-wrapper {
+  position:relative;
+}
+#table-scroll {
+  height:300px;
+  overflow:auto;  
+  margin-top:20px;
+}
+#table-wrapper table {
+  width:100%;
+    
+}
+
+
+@keyframes example {
+    0%   {width: 100%; left:100px; top:0px;}
+    
+    100% {width: 100%; left:110px; top:0px;}
+  }
+  
